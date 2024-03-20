@@ -12,6 +12,11 @@ vim.opt.relativenumber = true
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = 'a'
 
+-- Enable auto indent
+vim.opt.autoindent = true
+
+-- Enable smart indent
+vim.opt.smartindent = true
 -- Don't show the mode, since it's already in the status line
 vim.opt.showmode = false
 
@@ -22,6 +27,12 @@ vim.opt.clipboard = 'unnamedplus'
 
 -- Enable break indent
 vim.opt.breakindent = true
+
+-- Enable auto indent
+vim.opt.autoindent = true
+
+-- Enable smart indent
+vim.opt.smartindent = true
 
 -- Save undo history
 vim.opt.undofile = true
@@ -57,6 +68,6 @@ vim.opt.inccommand = 'split'
 vim.opt.cursorline = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
-vim.opt.scrolloff = 10
+vim.opt.scrolloff = 6
 
 -- vim: ts=2 sts=2 sw=2 et
