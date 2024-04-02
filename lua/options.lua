@@ -12,11 +12,6 @@ vim.opt.relativenumber = true
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = 'a'
 
--- Enable auto indent
-vim.opt.autoindent = true
-
--- Enable smart indent
-vim.opt.smartindent = true
 -- Don't show the mode, since it's already in the status line
 vim.opt.showmode = false
 
@@ -43,10 +38,6 @@ vim.opt.smartcase = true
 
 -- Terminal colors
 vim.opt.termguicolors = true
-
--- NOTE: theese two are only for staline plugin
-vim.opt.laststatus = 3
-vim.opt.showtabline = 2
 
 -- Keep signcolumn on by default
 vim.opt.signcolumn = 'yes'
@@ -77,4 +68,16 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 6
 
+vim.opt.wrap = false
+
+-- Smart Tab
+vim.opt.smarttab = true
+
+vim.opt.shiftwidth = 2
+
+vim.opt.tabstop = 2
+
+vim.opt.softtabstop = 2
+
+vim.opt.expandtab = true
 -- vim: ts=2 sts=2 sw=2 et
