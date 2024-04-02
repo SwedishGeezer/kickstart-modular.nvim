@@ -41,6 +41,13 @@ vim.opt.undofile = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
+-- Terminal colors
+vim.opt.termguicolors = true
+
+-- NOTE: theese two are only for staline plugin
+vim.opt.laststatus = 3
+vim.opt.showtabline = 2
+
 -- Keep signcolumn on by default
 vim.opt.signcolumn = 'yes'
 
