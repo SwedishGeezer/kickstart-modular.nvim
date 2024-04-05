@@ -5,7 +5,7 @@ return {
     require('lualine').setup {
       options = {
         icons_enabled = true,
-        theme = 'solarized-osaka',
+        theme = 'catppuccin',
         component_separators = '',
         sections_separators = '',
         always_divide_middle = true,
