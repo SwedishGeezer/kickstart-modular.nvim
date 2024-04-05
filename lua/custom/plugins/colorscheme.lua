@@ -10,7 +10,7 @@ return {
         sidebars = 'transparent',
         floats = 'transparent',
         terminal_colors = false,
-        vim.cmd.colorscheme 'solarized-osaka',
+        -- vim.cmd.colorscheme 'solarized-osaka',
       }
     end,
   },
@@ -25,7 +25,39 @@ return {
         lualine = {
           transparent = true,
         },
+        -- vim.cmd.colorscheme 'bamboo',
       }
+    end,
+  },
+  {
+    'samharju/synthweave.nvim',
+    lazy = false,
+    priority = 1000,
+    config = function()
+      -- vim.cmd.colorscheme 'synthweave-transparent'
+    end,
+  },
+  {
+    'catppuccin/nvim',
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require('catppuccin').setup {
+        flavour = 'mocha',
+        transparent_background = true,
+        no_italic = true,
+        styles = {
+          comments = { 'bold' },
+        },
+        default_integrations = true,
+        integrations = {
+          cmp = true,
+          gitsigns = true,
+          treesitter = true,
+          neotree = true,
+        },
+      }
+      vim.cmd.colorscheme 'catppuccin'
     end,
   },
 }
