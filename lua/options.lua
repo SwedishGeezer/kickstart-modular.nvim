@@ -8,6 +8,7 @@
 -- You can also add relative line numbers, to help with jumping.
 --  Experiment for yourself to see if you like it!
 vim.opt.relativenumber = true
+vim.opt.number = true -- Only showing the linenumber on the line I'm on.
 
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = 'a'
@@ -81,4 +82,6 @@ vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
 
 vim.opt.expandtab = true
+
+vim.opt.backspace = 'indent,eol,start' -- Allows backspace on indentation, end of line or insert start position
 -- vim: ts=2 sts=2 sw=2 et
