@@ -8,13 +8,13 @@ vim.opt.hlsearch = true
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
 -- Split windows horizontally or vertically
-vim.keymap.set('n', 'ss', ':split<Return>', opts)
-vim.keymap.set('n', 'sv', ':vsplit<Return>', opts)
-vim.keymap.set('n', 'sx', '<cmd>close<CR>')
+vim.keymap.set('n', 'ss', ':split<Return>', { desc = 'Split Pane Horizontally' })
+vim.keymap.set('n', 'sv', ':vsplit<Return>', { desc = 'Split Pane Vertically' })
+vim.keymap.set('n', 'sx', '<cmd>close<CR>', { desc = 'Split Pane Close' })
 
 -- New tab + navigation
-vim.keymap.set('n', 'te', ':tabedit<Return>')
-vim.keymap.set('n', 'tx', '<cmd>tabclose<CR>')
+vim.keymap.set('n', 'te', ':tabedit<Return>', { desc = 'Tab Edit Open' })
+vim.keymap.set('n', 'tx', '<cmd>tabclose<CR>', { desc = 'Tab Edit Close' })
 vim.keymap.set('n', '<tab>', ':tabnext<Return>')
 vim.keymap.set('n', '<s-tab>', ':tabprevious<Return>')
 
